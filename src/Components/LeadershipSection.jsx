@@ -33,7 +33,7 @@ export default function LeadershipSection() {
 
           <LeaderCard
             img={img2}
-            name="Mr. Shuraj"
+            name="Mr. Shishuraj"
             role="Director"
             desc="Contact No.:-9534064215 | Mail:-shishuraj0009@gmail.com"
           />
