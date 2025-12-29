@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { FaBars, FaXmark } from "react-icons/fa6";
-import logo from "../assets/logo.png"; // <-- LOGO IMPORT
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -12,7 +11,7 @@ export default function Navbar() {
     document.body.classList.toggle("overflow-hidden", menuOpen);
   }, [menuOpen]);
 
-  // Scroll shadow + escape + resize
+  // Scroll shadow + resize + escape
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 50);
     const onResize = () => window.innerWidth > 768 && setMenuOpen(false);
@@ -36,10 +35,10 @@ export default function Navbar() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 h-20 flex justify-between items-center">
-        {/* LOGO ONLY */}
+        {/* LOGO */}
         <NavLink to="/" className="flex items-center">
           <img
-            src={logo}
+            src="/logo.png"
             alt="Dev Roopmani Logo"
             className="h-40 w-auto object-contain"
           />
