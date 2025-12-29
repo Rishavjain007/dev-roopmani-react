@@ -14,9 +14,9 @@ export default function ContactInfo() {
         icon={<FaLocationDot />}
         title="Head Office"
         lines={[
-          "Construction Hub, Industrial Area",
-          "City Center, State - 123456",
-          "India",
+          "Rahika Tola, Ward No. 13",
+          "Murliganj, PO: Murliganj",
+          "Dist: Madhepura, Bihar – 852122",
         ]}
       />
 
@@ -24,9 +24,8 @@ export default function ContactInfo() {
         icon={<FaPhone />}
         title="Phone Numbers"
         lines={[
-          "+91 98765 43210 (Office)",
-          "+91 98765 43211 (Support)",
-          "+91 98765 43212 (Projects)",
+          "+91 9934000221",
+          "+91 9534064215",
         ]}
       />
 
@@ -34,9 +33,8 @@ export default function ContactInfo() {
         icon={<FaEnvelope />}
         title="Email Addresses"
         lines={[
-          "info@devroopmani.com",
-          "projects@devroopmani.com",
-          "support@devroopmani.com",
+          "santoshmlg221@gmail.com",
+          "shishuraj0009@gmail.com",
         ]}
       />
 
@@ -61,9 +59,9 @@ function Info({ icon, title, lines }) {
       </div>
       <div>
         <h4 className="font-bold text-slate-800 mb-1">{title}</h4>
-        {lines.map((l, i) => (
-          <p key={i} className="text-gray-600 text-sm">
-            {l}
+        {lines.map((line, index) => (
+          <p key={index} className="text-gray-600 text-sm">
+            {line}
           </p>
         ))}
       </div>
