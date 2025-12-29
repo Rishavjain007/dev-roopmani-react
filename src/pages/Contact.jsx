@@ -31,7 +31,7 @@ export default function Contact() {
         </div>
       </section>
 
-      <BranchOffices />
+      {/* <BranchOffices /> */}
       <MapSection />
       <EmergencyContact />
       <Toast show={toast} />
